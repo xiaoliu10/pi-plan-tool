@@ -1,0 +1,45 @@
+{
+  "name": "@wengine-ai/pi-plan-tool",
+  "version": "0.0.1",
+  "description": "Task-checklist discipline for pi coding agent: a session-only desktop_update_plan tool (never executes commands, never touches project files) plus the checklist guideline for systemPrompt injection. Split out of pi-desktop's built-in desktop-policy so CLI and Desktop share one implementation.",
+  "keywords": [
+    "pi",
+    "pi-package",
+    "pi-coding-agent",
+    "plan",
+    "checklist",
+    "task-discipline",
+    "code-quality"
+  ],
+  "license": "Apache-2.0",
+  "type": "module",
+  "publishConfig": {
+    "access": "public"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "pi": {
+    "extensions": [
+      "./index.mjs"
+    ]
+  },
+  "peerDependencies": {
+    "@earendil-works/pi-coding-agent": "*"
+  },
+  "scripts": {
+    "test": "node --test test.mjs",
+    "release:npm": "npm publish"
+  },
+  "files": [
+    "index.mjs",
+    "README.md",
+    "CHANGELOG.md",
+    "LICENSE"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xiaoliu10/pi-plan-tool.git"
+  },
+  "homepage": "https://github.com/xiaoliu10/pi-plan-tool#readme"
+}
